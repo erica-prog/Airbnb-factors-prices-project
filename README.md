@@ -28,7 +28,7 @@ We also wanted to analyse the impact of reviews and if the actual content of the
 
 **The key questions I  aim to answer as I contribute in this group project are:**
 
-**1. Do reviews actually matter?**
+**1. Do reviews matter?**
    
 **2. How can we use machine learning to help us predict the prices of rental properties?**
  
@@ -75,13 +75,9 @@ Descriptive statistics are useful as they can help us understand the collective 
 
 Overall we were looking at both continuous and discrete numerical data in terms of pricing, number of guests etc and nominal categorical textual data in the reviews, locations and amenities.
 
-Central Tendency:
+**Central Tendency:** The median price of all listings was £85. We opted to focus on median prices over mean prices to avoid the problems caused by outliers and extreme values within the dataset. 
 
-The median price of all listings was £85. We opted to focus on median prices over mean prices to avoid the problems caused by outliers and extreme values within the dataset. 
-
-Dispersion:
-
-There was a wide range of prices across the listings ranging from £0 to our limit of £1000
+**Dispersion:** There was a wide range of prices across the listings ranging from £0 to our limit of £1000
 
 ## Methodology
 
