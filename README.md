@@ -26,9 +26,11 @@ Airbnb has become a disruptor in the market for property rentals, and thus has b
 
 We also wanted to analyse the impact of reviews and if the actual content of the written reviews is significant.
 
-The key questions I  aim to answer as I contribute in this group project are: 
-4. Do reviews actually matter?
-5. How can we use machine learning to help us predict the prices of rental properties?
+**The key questions I  aim to answer as I contribute in this group project are:**
+
+**1. Do reviews actually matter?**
+   
+**2. How can we use machine learning to help us predict the prices of rental properties?**
  
 
 ## Data
