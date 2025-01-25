@@ -288,5 +288,8 @@ For the comments section, it is part of a business person to investigate this be
 
 Linear regression and machine learning to predict prices had some selection bias and required further pre-processing of the data hence may not have been the most accurate model thus giving us some poor results. For further future work on predicting prices using machine learning, we could explore more models such as XGB Booster, GradientBoostingRegressor, and  “conduct a more exhaustive parameter tuning”. Even so, the Random Forest model is a better predictor of prices for this listing's data with maximum accuracy. We must think more about how to reduce the errors of the outliers and what they represent in all machine learning models. 
 
+## Further Information 
+Here is the link to my group project in full: ![Full Report of the Airbnb Project](https://github.com/07shriyab/Airbnb-Data-Science-Project)
+
 
 
