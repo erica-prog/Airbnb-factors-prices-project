@@ -20,9 +20,9 @@ Finally, we were able to put together a list of recommendations to prospective g
 
 
 ## Aims
-The primary aim of this project is to explore the factors that influence Airbnb prices in London. The secondary aim of this project is to create a mechanism in order to predict prices of listings in London using machine learning.
+The primary aim of this project is to explore the factors that influence Airbnb prices in London. The secondary aim of this project is to create a mechanism in order to predict the prices of listings in London using machine learning.
 
-Airbnb has become a disruptor in the market for property rentals, and thus has become a relatively easy way for people to earn extra income through investing in new properties and renting them out via Airbnb. Guests often find Airbnbs to be cheaper and tend to prefer them over hotels due to the ‘homier’ feel. However, as Airbnb rapidly expands with thousands of new listings being added every year, we wanted to find out what type of properties a host should invest in and what features they should include to make the most rental revenue and retain customers leading us to our first question: what are the most important factors influencing pricing? To address this we decided to look at the features that are common among the most expensive listings - location, amenities and so on.
+Airbnb has become a disruptor in the market for property rentals, and thus has become a relatively easy way for people to earn extra income through investing in new properties and renting them out via Airbnb. Guests often find Airbnb to be cheaper and tend to prefer them over hotels due to the ‘homier’ feel. However, as Airbnb rapidly expands with thousands of new listings being added every year, we wanted to find out what type of properties a host should invest in and what features they should include to make the most rental revenue and retain customers leading us to our first question: what are the most important factors influencing pricing? To address this we decided to look at the features that are common among the most expensive listings - location, amenities and so on.
 
 We also wanted to analyse the impact of reviews and if the actual content of the written reviews is significant.
 
