@@ -1,4 +1,4 @@
-# Exploring the Factors that affect Airbnb Prices in London
+# Exploring the Factors that Affect Airbnb Prices in London
 
 ## Executive Summary 
 
