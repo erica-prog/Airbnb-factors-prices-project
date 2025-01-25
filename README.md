@@ -10,42 +10,25 @@ Above we see that a rental request for 4 adults in London for 3 nights brings ab
 
 Through the use of tools such as Pandas, Matplotlib, Seaborn, and Python to analyse and visualise our data, we found that while there is some correlation with prices and the factors we have chosen to investigate (location, Wifi), others do not seem to have a trend (availability 365). Also, we have learned how to use Natural Processing Language to analyse comments (unstructured textual data)  which will be helpful for the hosts to understand each  guest’s activities, opinions and feedback to successfully derive their rental services. Furthermore, we learnt that predicting prices with Random Forest Regression is better compared to other selected machine learning regression models. However, we have to keep in mind that there are price outliers in the listings data, making machine learning a bit inefficient.
 
-Overall, we recognize that the listings and reviews data are not perfect because the lead time at which they were gathered was 9th September 2021. Therefore, the factors may have a different relationship with the price today than the price from September. However, we see machine learning and python libraries have given the importance of reviews and have enabled us to make an approximate price prediction of listings for hosts and guests. This will encourage more research for  data analysts to help hosts see if their Airbnb price could be sensitive to the change of such factors observed.
+Overall, we recognize that the listings and review data are not perfect because the lead time at which they were gathered was 9th September 2021. Therefore, the factors may have a different relationship with the price today than the price from September. However, we see machine learning and Python libraries have given the importance of reviews and have enabled us to make an approximate price prediction of listings for hosts and guests. This will encourage more research for  data analysts to help hosts see if their Airbnb price could be sensitive to the change of such factors observed.
 
 Finally, we were able to put together a list of recommendations to prospective guests and hosts in order to make the most value out of their next property rental. Two examples of these include:
 - Location is an important factor that affects prices 
 - The most expensive boroughs are in the centre of London (Kensington, Chelsea, City of London, Westminster)
-- Top amenities an aspiring host should include: Wifi, smoke alarm, essentials, heating, long term stay allowed
+- Top amenities an aspiring host should include: Wifi, smoke alarm, essentials, heating, long-term stay allowed
 
-
-## Motivation
-
-Our initial motivation for this project stemmed from our awareness of Airbnb scams being presented on the news quite frequently. Thus, we initially wanted to base our project around identifying scam listings, however we decided to change the route of this project into something broader and useful to us as students. Since 2007, Airbnb has vastly expanded across many countries and has disrupted the hospitality sector as people move away from traditional hotel and resort bookings. We were really interested in exploring this topic as Airbnb has revolutionised the property rental market and has made it much easier and more affordable to travel thus making it a great way for students to explore countries. As we all study Economics, this topic was of particular relevance to us as we are aware that Airbnb capitalises upon the sharing economy thus it was intriguing to use the array of data points to find out how hosts could increase their revenue. Also, due to having an interest in financial markets, Airbnb is a stock that will continue to keep growing due to its disruptive nature therefore analysing its market structure and how they can reign in more revenue is particularly interesting.
-
-With so many different properties in each location, it becomes difficult to find the perfect one that is good value for money, in a convenient location with tourist attractions and is equipped with the amenities we need. Furthermore, through a quick surf through Airbnb’s website, we see many listings that look very similar in photos but are priced very differently thus we wanted to delve deeper into the hidden discrepancies that may be causing these price variations. 
-
-
-## Justification
-
-Our project is relevant to all three stakeholders - rental property hosts, the firm and guests. Analysis of the factors that make a listing more expensive means that hosts can ensure their listing has all the essential features and amenities to charge a higher price. As well as this, guests are informed of what factors make a listing cheaper and that the property they have chosen includes features that they want. Although Airbnb is able to give general advice to help hosts price their listings, there are not many services that are able to use several data points to accurately predict the price of a listing thus we deemed it fit to include a machine learning model that could help forecast base prices.  
-
-
-Our project is particularly relevant now because there has been a bounce back in the holiday market. In fact, Airbnb bookings hit a record high in March of 2022 according to Airbnb’s financial results. Airbnb was rapidly growing in 2020, but after COVID-19 caused a strike to the travel industry, there was a severe fall in booking numbers. On a year on year basis, bookings fell by 72% and at one point there were more cancellations than bookings due to travel restrictions. This placed pressure on Airbnb and all the hosts who were losing revenue due to the significant decrease in bookings being made. There was resilience as people began to travel domestically, however now the travel industry has made a full comeback with bustling airports over the Jubilee Bank Holiday Weekend, for example. It is now more important than ever that hosts have accurately priced their listings and filled them with the most sought after amenities and facilities to avoid making further losses. Looking at reviews is also particularly important as reviews build up communication and trust between the listing owner and guests. This constructive criticism also allows property owners to refine their listing according to their guest’s desires. Thus we decided that conducting sentiment analysis on the reviews from the listings  that bring in the most revenue would be extremely important within our data analysis.
 
 
 ## Aims
 The primary aim of this project is to explore the factors that influence Airbnb prices in London. The secondary aim of this project is to create a mechanism in order to predict prices of listings in London using machine learning.
 
-Airbnb has become a disruptor in the market for property rentals thus has become a relatively easy way for people to earn extra income through investing in new properties and renting them out via Airbnb. Guests often find Airbnbs to be cheaper and tend to prefer them over hotels due to the ‘homier’ feel. However, as Airbnb rapidly expands with thousands of new listings being added everyday, we wanted to find out what type of properties a host should invest in and what features they should include in order to make the most rental revenue and to retain customers leading us to our first question: what are the most important factors influencing pricing? To address this we decided to look at the features that are common among the most expensive listings - location, amenities and so on.
+Airbnb has become a disruptor in the market for property rentals, and thus has become a relatively easy way for people to earn extra income through investing in new properties and renting them out via Airbnb. Guests often find Airbnbs to be cheaper and tend to prefer them over hotels due to the ‘homier’ feel. However, as Airbnb rapidly expands with thousands of new listings being added every year, we wanted to find out what type of properties a host should invest in and what features they should include to make the most rental revenue and retain customers leading us to our first question: what are the most important factors influencing pricing? To address this we decided to look at the features that are common among the most expensive listings - location, amenities and so on.
 
 We also wanted to analyse the impact of reviews and if the actual content of the written reviews is significant.
 
-The key questions we aim to answer through our project are: 
-1. What are the most important factors influencing pricing?
-2. What is the correlation between these factors and prices?
-3. Why is or isn’t there a correlation?
+The key questions I  aim to answer as I contribute in this group project are: 
 4. Do reviews actually matter?
-5. How can we use machine learning to help us predict prices of rental properties?
+5. How can we use machine learning to help us predict the prices of rental properties?
  
 
 ## Data
@@ -59,19 +42,15 @@ COVID-19 created a significant setback to listings and revenues so we decided it
 
 ## Getting Our Data
 
-Initially we did face some challenges with finding a suitable dataset as sources such as Kaggle did not provide us with comprehensive enough information and missed out crucial points such as amenities.
+Initially, there were some challenges with finding a suitable dataset as sources such as Kaggle did not provide us with comprehensive enough information and missed out on crucial points such as amenities.
 
 The datasets that we have used for this project come from InsideAirbnb.com which is a mission-driven activist project that scrapes Airbnb reviews and listings across different cities globally. InsideAirbnb provided us with two relevant CSV files on both listings and reviews. We chose the detailed version of the dataset over the summarised version as it included a wider array of data points such as the number of bedrooms and the types of amenities (wifi, heating, free parking, hot water etc ). These datasets were initially formed to highlight illegal listings on the platform that Murray Cox believed were distorting the housing market. It delivers curated statistics to cities that seek to rein in the home-sharing market. The datasets from InsideAirbnb can be considered factual as it is scraped directly from the Airbnb website and the publisher does not alter the data. The data is unlikely to be biased as it is all quantitative and publicly available. 
 
 We used 2 datasets shown below. The screenshots show a randomly selected sample of each raw dataset opened in Excel.
 
-1. Listings.csv
+1. **Listings.csv**: This dataset contains information about Airbnb listings, including neighbourhood, property type and so on. There are 66000 rows and 74 columns. These columns were the factors we analysed against median prices. 
 
-This dataset contains information about Airbnb listings, including neighbourhood, property type and so on. There are 66000 rows and 74 columns. These columns were the factors we analysed against median prices. 
-
-2. Reviews.csv
-
-This dataset contains written comments by guests about their experiences in a particular Airbnb. There are over 1 million rows of reviews, with some listings (given by listing_id) having multiple reviews. 
+2. **Reviews.csv**: This dataset contains written comments by guests about their experiences in a particular Airbnb. There are over 1 million rows of reviews, with some listings (given by listing_id) having multiple reviews. 
 
 
 ### Obtaining Data
@@ -106,7 +85,7 @@ There was a wide range of prices across the listings ranging from £0 to our lim
 
 We used Python and Jupyter Notebook to analyse the datasets. The first thing we focused on was cleaning the data to remove erroneous, irrelevant, incorrectly formatted or duplicated information that would negatively influence our analysis and exploration. The steps we followed are detailed in the code, but the main things we focused on were dropping unwanted columns and null values or inconsistent entries from certain columns, converting data types where applicable as well as limiting prices. We were careful not to manipulate data too much but instead ensured that the data was cleaned only to the extent that it could be more easily and appropriately analysed, which was especially important as our project relied heavily on graphs.
 
-This was followed by data exploration and modelling using the matplotlib and seaborn packages through the plotting of graphs such as bar charts and and maps. We analysed each factor separately - these included the number of bedrooms, location, the number of listings per host, the availability of the airbnb and so on - by determining their effect on the median price of the Airbnb listing. While we originally plotted graphs of factors against mean prices, we eventually decided to use median prices, which we found to be a better measure because it is less skewed by extreme values. Even after reducing the maximum price from £16700 to £1000, the range of prices which starts from £7 is still very wide, and thus median prices provide a more faithful representation.
+This was followed by data exploration and modelling using the Matplotlib and Seaborn packages through the plotting of graphs such as bar charts and and maps. We analysed each factor separately - these included the number of bedrooms, location, the number of listings per host, the availability of the Airbnb and so on - by determining their effect on the median price of the Airbnb listing. While we originally plotted graphs of factors against mean prices, we eventually decided to use median prices, which we found to be a better measure because it is less skewed by extreme values. Even after reducing the maximum price from £16700 to £1000, the range of prices which starts from £7 is still very wide, and thus median prices provide a more faithful representation.
 
 As delineated in our code, we chose graph types based on what we felt suited the data best and that enabled us to visualise it and determine a correlation in the most appropriate way, whether it was a map, bar or scatter plot.
 
@@ -116,9 +95,9 @@ In the reviews data, the comments were cleaned and preprocessed  by filtering ou
 
 In comparison of the ``reviews_score_ratings`` and ``price``, the prices were changed into floats and plotted the graph using matplotlib after combining the listings and reviews data to match with each host.
 
-To analyse the names of properties with top 100 cheapest and expensive listings, we selected ``names`` and ``price`` from the listings data. Then, we created 2 dataframes for both the top 100 expensive and cheapest listings, which include the ``names``. After preprocessing the dataframes using the same steps for cleaning the comments with NLTK, then WordCloud was created for both dataframes with the help of matplotlib.
+To analyse the names of properties with top 100 cheapest and expensive listings, we selected ``names`` and ``price`` from the listings data. Then, we created 2 dataframes for both the top 100 expensive and cheapest listings, which include the ``names``. After preprocessing the data frames using the same steps for cleaning the comments with NLTK, then WordCloud was created for both data frames with the help of Matplotlib.
 
-To calculate the subjectivity and polarity of the 10000 comments in the reviews data, we used Textblob sentiment after cleaning the textual data.  Then, we analysed the polarity scores to see whether it is a negative comment as the score is less than zero, neutral comment as the score is equal to zero, or a positive comment as the score is greater than zero.
+To calculate the subjectivity and polarity of the 10000 comments in the review data, we used Textblob sentiment after cleaning the textual data.  Then, we analysed the polarity scores to see whether it is a negative comment as the score is less than zero, neutral comment as the score is equal to zero, or a positive comment as the score is greater than zero.
 
 For the ``amenities``, the data was cleaned by removing the NaN values and then the amenities section was changed into lists and was able to string replace the brackets and the apostrophes to create a set of all possible amenities.
 
@@ -150,32 +129,32 @@ Some Airbnbs also had additional service or cleaning fees which we realised coul
 
 ### Sub Problem 1: Do reviews actually matter?
 
-![](Images/scatterplotofreviewsratingsvsprice.png)
+![](Image/scatterplotofreviewsratingsvsprice.png)
 
-It is viewed that a higher overall review score (5) is given to the most properties that are less than $400 (around £300). This shows that the overall review score is not positively correlated with prices. Also, there are some expensive listings with low review ratings.
+It is viewed that a higher overall review score (5) is given to most properties that are less than $400 (around £300). This shows that the overall review score is not positively correlated with prices. Also, there are some expensive listings with low review ratings.
 
-This links to the feature importance on price as ``review_score_rating`` is not as important in predicting prices. Overall, there’s no correlation between the ``review_score_rating`` and prices. This means that cheaper listings can have either absolute best services or the worst services than the expensive listings (which seem to have a somewhat better review score starting from $400). This means that there could be other aspects of the Airbnb rentals that lead to the score rating. This is where analysing comments becomes important to find the reasoning behind the review score rating.
+This links to the feature importance on price as ``review_score_rating`` is not as important in predicting prices. Overall, there’s no correlation between the ``review_score_rating`` and prices. This means that cheaper listings can have either the absolute best services or the worst services than the expensive listings (which seem to have a somewhat better review score starting from $400). This means that there could be other aspects of the Airbnb rentals that lead to the score rating. This is where analysing comments becomes important to find the reasoning behind the review score rating.
 
-![](Images/reviewspermonthvsprice.png)
-![](Images/pricevsreviewspermonthmorethan175.png)
+![](Image/reviewspermonthvsprice.png)
+![](Image/pricevsreviewspermonthmorethan175.png)
 
 We can see that most reviews range from 0 to 5 reviews per month across all prices. However, the data shows the number of reviews across any month. It has been evidently seen that at $175, there are 25 reviews per month which are the highest compared to other prices. This shows that reviews are important when setting prices because they will lead to more attractions as the customers have a better understanding of how the properties and the stay are.
 
-The ``reviews_per_month`` are more situated around the prices below $10000. This means that the ``reviews_per_month`` may be requested more by the hosts/owners to boost their popularity or reduce seeking guests’ suspicions. This is because they may be more convinced to book the apartment if they read about the experiences of the previous guest and do not fully associate  the low price with a low-quality property.
+The ``reviews_per_month`` are more situated around the prices below $10000. This means that the ``reviews_per_month`` may be requested more by the hosts/owners to boost their popularity or reduce seeking guests’ suspicions. This is because they may be more convinced to book the apartment if they read about the experiences of the previous guests and do not fully associate  the low price with a low-quality property.
 
 **Sentiment Analysis**
 
-In ``comments``, which is a free form text column in the reviews.csv, there were instances where these values are not strictly in English only.
+In ``comments``, which is a free-form text column in the reviews.csv, there were instances where these values are not strictly in English only.
 
 However, we didn’t adjust it and looked more at the English comments as this language barrier was just a minor issue. The NLTK is a go-to package in Python to obtain a numerical sentiment value of positive, negative and compound(combined) of any given English text. 
 
-![](Images/sentimentanalysistextblobdataframe.png)
+![](Image/sentimentanalysistextblobdataframe.png)
 
 The ``comments`` from above for each listing were analysed using Textblob sentiment analysis models. This method assigns a score between -1 and 1 to each review and the scores are averaged across each listing.
 
 This is the first 10000 comments that were analysed. We can see that there are more positive comments as demonstrated below. 
 
-![](Images/sentimentanalysisvaluecounts,png)
+![](Image/sentimentanalysisvaluecounts,png)
 
 Importance of text sentiment polarity:
 - When people are searching for a place, many choose to look at the comments and look at the average scores. For the sentiment classification, TextBlob included giving sentiment scores. Based on the polarity of the general score, a listing can go from -1 (absolute negative sentiment) to 0 (absolute natural sentiment), to 1(absolute positive sentiment). This is important for a host when deciding to write a summary about a listing to customers. Many hosts use more positive language, while others are neutral.
@@ -193,33 +172,33 @@ Here we have seen the most common words in the summary of the cheapest listings.
 
 **Comments without price comparison**
 
-Using the Nltk CountVectorizer(), the top 10 common words in the ``comments`` are shown. 
+Using the NLTK CountVectorizer(), the top 10 common words in the ``comments`` are shown. 
 
 This word cloud shows the most frequently used words in the ``comments``. We can see that "great”, location”, clean”, place”, and “recommend” are mostly featured in the comments.  The host is definitely one of the most valuable aspects, essentially for his/her availability, help and welcome. This is what guests are looking for when booking a rental. However, it is difficult to understand the actual context of each review as it could be given with a negative token,  such as “not” e.g “not great”.
 
 Furthermore,  it doesn't help to explain how it relates to prices. However, it does give an idea to the hosts of what people are commenting on AirBnB nowadays and may use it to describe their properties. This allows us to see how hosts are naming their property, and what words the guests  can expect to see in the comments section when browsing for an Airbnb. 
 
-Overall, names of properties(textual data) and sentiment analysis of the comments does affect price.
+Overall, names of properties(textual data) and sentiment analysis of the comments do affect price.
 
 **Overall Feature Importance of Selected Factors**
 
-These graphs were plotted using different modules - the Decision Tree Classifier (left) and Random Forest Regression (right). The decision tree, however, tends to overfit data and thus we found that the random forest model was more accurate because it chooses features randomly during the training process. This model, which produced the graph on the right, suggests that the total number of listings per host was the most important factor. This could be because more experienced hosts know the market better and are able to adopt a more appropriate pricing strategy. It is almost given that factors like the number of bedrooms, bathrooms, beds and guests accommodated were close to the top in terms of importance, but what was slightly surprising was that review scores did not seem to matter as much as we expected. A different project that conducted a similar investigation found that review scores for things like location, cleanliness and so on made up several of the top 10 most influential attributes on price per person, but it is possible that our results are the way they are because most of the listings have similar ratings of 4-5 stars, despite the large range of prices, which means that other factors could play larger roles.
+These graphs were plotted using different modules - the Decision Tree Classifier (left) and Random Forest Regression (right). The decision tree, however, tends to overfit data and thus we found that the random forest model was more accurate because it chooses features randomly during the training process. This model, which produced the graph on the right, suggests that the total number of listings per host was the most important factor. This could be because more experienced hosts know the market better and can adopt a more appropriate pricing strategy. It is almost given that factors like the number of bedrooms, bathrooms, beds and guests accommodated were close to the top in terms of importance, but what was slightly surprising was that review scores did not seem to matter as much as we expected. A different project that conducted a similar investigation found that review scores for things like location, cleanliness and so on made up several of the top 10 most influential attributes on price per person, but it is possible that our results are the way they are because most of the listings have similar ratings of 4-5 stars, despite the large range of prices, which means that other factors could play larger roles.
 
-A limitation of the feature importance graphs (as well as the heat map) is that it was plotted only with factors that had numerical (integer/float) values, and thus did not incorporate amenities, location, property or room type. Furthermore, despite the fact that certain factors were found to be of highest importance in determining price, our individual analysis of them shows that the correlations were still not very strong. 
+A limitation of the feature importance graphs (as well as the heat map) is that it was plotted only with factors that had numerical (integer/float) values, and thus did not incorporate amenities, location, property or room type. Furthermore, despite the fact that certain factors were found to be of the highest importance in determining price, each analysis shows that the correlations were still not very strong. 
 
 A few reasons we came up to explain this phenomenon include:
 - Some hosts might not know how to price their listings and may simply choose a price without following any real approach
 - Pricings would be quite subjective because different individuals would attach different levels of importance to certain factors
    - For instance, one host might think that having more bathrooms is important and thus would charge a higher price simply because of this, but another might not. 
 
-### Sub Problem 2: Can we Predict Prices Using Machine Learning?
+### Sub Problem 2: Can We Predict Prices Using Machine Learning?
 
 Reason for predicting London Airbnb rental prices:
 
 As house prices rise annually, it is necessary to create a mechanism (using machine learning models) to forecast future AirBnB properties. Landowners, estate values, hosts, investors and guests may use the house price prediction to calculate the valuation of a rental property, especially because individual factors such as physical condition, styles, reviews and location all  influence listing prices.
 
 Summary of Data Cleaning process:
-1. Dropping the irrelevant variables, and includes ``host_id``, ``minimum_nights`` etc
+1. Dropping the irrelevant variables, and including ``host_id``, ``minimum_nights`` etc
 2. Exclude the properties with listed prices of 0
 3. Filling the missing NaN in ``reviews_per month`` and ``host_total_listing_count`` with 0 values
 4. Creating a dummy for the categorical variables. Data_encoded(``minimum_night``)
@@ -228,16 +207,16 @@ The Train and Test Split:
 
 The Test and Train group shapes  for ``hosting_listing_count``, ``neighbourhood_cleansed_Cat`` and ``room_type_Cat`` were (46632,3) and (19986,3), respectively.
 
-One would perform TTS on a data set randomly(apart from time series). So, we  separated the models into 2 groups: train and test. This allows us to use one set to train the model on and then another to test it with. For a large-sized dataset like ours, a 70/30 split between train and test is usually conventional.
+One would perform TTS on a data set randomly(apart from time series). So, we  separated the models into 2 groups: train and test. This allows us to use one set to train the model on and split the other dataset as a testing dataset. For a large-sized dataset, a 70/30 split between train and test is usually conventional.
 
-The simplest way you could create a train and trust dataset from the initial one is by using Scikit-learn’s train_test split function with the test size = 0.3. This would however lead to one issue: The target value( i.e price) could be biassed by chance.
+The simplest way to create a train and trust dataset from the initial one is by using Scikit-learn’s train_test split function with the test size = 0.3. This would however lead to one issue: The target value( i.e price) could be biased by chance.
 
 
 1. Linear Regression 
 
-The reason why to choose ``availability_365`` as an independent variable is because it is one of the top important features to predict prices. Furthermore, the customers are interested mainly in the availability of the property when one is booking in AirBnB. 
+The reason to choose ``availability_365`` as an independent variable is because it is one of the top important features to predict prices. Furthermore, customers are mainly interested in the availability of the property when booking an AirBnB booking. 
 
-Linear Regression was set as a baseline model on the dataset using all of the features as model inputs. A python package, Sklearn, was used to calculate this model; the results are as follows:
+Linear Regression was set as a baseline model on the dataset using all of the features as model inputs. A Python package, Sklearn, was used to calculate this model; the results are as follows:
 - intercept: 0.1668724
 - The coefficient is 129.48. By checking the R-squared, we can see that less than half of the variance in the outcome variable(price)  can be explained by the model. 
 
@@ -245,7 +224,7 @@ Linear Regression was set as a baseline model on the dataset using all of the fe
 2. Multiple Regression 
 
 - ``host_total_listings_count``: number of listings owned and operated by a single host. This shows how experienced the host is when setting prices. Therefore, it will be a strong comparison when predicting prices for certain situations.
-- ``neighbourhood_cleansed_Cat``: this is where the location becomes important in predicting prices. For example, if the neighbourhood is in-demand, then raise the prices and if the neighbourhood is in less demand, then lower prices. This was encoded into ordinal values.
+- ``neighbourhood_cleansed_Cat``: this is where the location becomes important in predicting prices. For example, if the neighbourhood is in demand, then raise the prices and if the neighbourhood is in less demand, then lower prices. This was encoded into ordinal values.
 - ``room_type_Cat``: If the room offers an en-suite bathroom or a private balcony, it will help the rental property to stand out and this will affect the price. This was encoded into ordinal values. 
 
 This multiple regression provides these  results:
