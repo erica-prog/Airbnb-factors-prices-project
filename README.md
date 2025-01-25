@@ -106,7 +106,7 @@ Then, we used the train_test split model (70:30 split) and accuracy scores to ca
 
 Then, the NaN values were replaced by zeros in the columns. We drop the infrequent columns by creating a list of the amenity columns that have fewer  than 10% of listings. This led to our remaining amenities that were analysed below for features importance.
 
-For the top amenities, the data was cleaned by removing the NaN values and then the amenities were separated using the numpy concentrate to count the top 20 amenities. Then, we plotted this using matplotlib.
+For the top amenities, the data was cleaned by removing the NaN values and then the amenities were separated using the Numpy concentrate to count the top 20 amenities. Then, we plotted this using Matplotlib.
 
 For predicting prices, the process is explained below. The sklearn package was used to calculate each model (Linear Regression, Multiple Regression, Random Forest, KNN and Decision Tree. First, exclude the properties with listed prices of zero values. After, we replaced null values with zero values for ``reviews_per month`` and ``host_listing_count``, and then encoded categorical values as integers.  The dataset was horizontally split into training and test data sets and also split into features (=X_train and X_test) and target (y_train and y_test). 
 
@@ -188,9 +188,6 @@ Furthermore,  it doesn't help to explain how it relates to prices. However, it d
 Overall, names of properties(textual data) and sentiment analysis of the comments do affect price.
 
 
-
-
-
 **Overall Feature Importance of Selected Factors**
 
 These graphs were plotted using different modules - the Decision Tree Classifier (left) and Random Forest Regression (right). The decision tree, however, tends to overfit data and thus we found that the random forest model was more accurate because it chooses features randomly during the training process. This model, which produced the graph on the right, suggests that the total number of listings per host was the most important factor. This could be because more experienced hosts know the market better and can adopt a more appropriate pricing strategy. It is almost given that factors like the number of bedrooms, bathrooms, beds and guests accommodated were close to the top in terms of importance, but what was slightly surprising was that review scores did not seem to matter as much as we expected. A different project that conducted a similar investigation found that review scores for things like location, cleanliness and so on made up several of the top 10 most influential attributes on price per person, but it is possible that our results are the way they are because most of the listings have similar ratings of 4-5 stars, despite the large range of prices, which means that other factors could play larger roles.
@@ -225,8 +222,10 @@ One would perform TTS on a data set randomly(apart from time series). So, we  se
 The simplest way to create a train and trust dataset from the initial one is by using Scikit-learn’s train_test split function with the test size = 0.3. This would however lead to one issue: The target value( i.e price) could be biased by chance.
 
 
-1. Linear Regression 
+1. Linear Regression
+   
 ![](Image/LinearRegequation.png)
+
 The reason to choose ``availability_365`` as an independent variable is because it is one of the top important features to predict prices. Furthermore, customers are mainly interested in the availability of the property when booking an AirBnB booking. 
 
 Linear Regression was set as a baseline model on the dataset using all of the features as model inputs. A Python package, Sklearn, was used to calculate this model; the results are as follows:
