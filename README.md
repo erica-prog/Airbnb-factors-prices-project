@@ -158,7 +158,11 @@ This is the first 10000 comments that were analysed. We can see that there are m
 
 Importance of text sentiment polarity:
 - When people are searching for a place, many choose to look at the comments and look at the average scores. For the sentiment classification, TextBlob included giving sentiment scores. Based on the polarity of the general score, a listing can go from -1 (absolute negative sentiment) to 0 (absolute natural sentiment), to 1(absolute positive sentiment). This is important for a host when deciding to write a summary about a listing to customers. Many hosts use more positive language, while others are neutral.
-- However, some don't give a full picture and are hard to read, which are “made” and “would” as shown in the WordCloud of the top words in the comments. The fact that “great” appears in several comments, means that the properties in London have wonderful hosts. For example, there are some comments which contain “sad” but with human analysis, it turns out to be a positive comment. Therefore, TextBlob is not perfect in sentiment analysis. 
+- However, some don't give a full picture and are hard to read, which are “made” and “would” as shown in the WordCloud of the top words in the comments. The fact that “great” appears in several comments, means that the properties in London have wonderful hosts. For example, there are some comments which contain “sad” but with human analysis, it turns out to be a positive comment. Therefore, TextBlob is not perfect in sentiment analysis.
+
+![](Image/sentimentanalysistextblobdataframe.png)
+
+![](Image/sentimentanalysisvaluecounts.png)
 
 **Names of the Property compared to Prices**
 
@@ -170,15 +174,24 @@ Created a dataset and WordCloud of the top 100 cheapest listings:
 
 Here we have seen the most common words in the summary of the cheapest listings. As it can be seen from WordCloud, indeed there are overlapping words with the most expensive listings. Words like: 'bedroom', 'family', and 'flat' appear frequently in both. So they do not tell us anything special. However, words like: 'apartment', 'near' & 'central' appear more frequently in inexpensive listings as opposed to cheaper listings. Indeed,  it turns out that there are certain words which appear more frequently among expensive listings.
 
+![](Image/wordcloudcomments.png)
+
 **Comments without price comparison**
 
 Using the NLTK CountVectorizer(), the top 10 common words in the ``comments`` are shown. 
+![](Image/wordcloudnameexpensivelistings.png)
+
+![](dataframeoftop10wordsincomments.png)
 
 This word cloud shows the most frequently used words in the ``comments``. We can see that "great”, location”, clean”, place”, and “recommend” are mostly featured in the comments.  The host is definitely one of the most valuable aspects, essentially for his/her availability, help and welcome. This is what guests are looking for when booking a rental. However, it is difficult to understand the actual context of each review as it could be given with a negative token,  such as “not” e.g “not great”.
 
 Furthermore,  it doesn't help to explain how it relates to prices. However, it does give an idea to the hosts of what people are commenting on AirBnB nowadays and may use it to describe their properties. This allows us to see how hosts are naming their property, and what words the guests  can expect to see in the comments section when browsing for an Airbnb. 
 
 Overall, names of properties(textual data) and sentiment analysis of the comments do affect price.
+
+
+
+
 
 **Overall Feature Importance of Selected Factors**
 
@@ -207,13 +220,15 @@ The Train and Test Split:
 
 The Test and Train group shapes  for ``hosting_listing_count``, ``neighbourhood_cleansed_Cat`` and ``room_type_Cat`` were (46632,3) and (19986,3), respectively.
 
+1[](Image/snapshotoftraintestsplitamenities.png)
+
 One would perform TTS on a data set randomly(apart from time series). So, we  separated the models into 2 groups: train and test. This allows us to use one set to train the model on and split the other dataset as a testing dataset. For a large-sized dataset, a 70/30 split between train and test is usually conventional.
 
 The simplest way to create a train and trust dataset from the initial one is by using Scikit-learn’s train_test split function with the test size = 0.3. This would however lead to one issue: The target value( i.e price) could be biased by chance.
 
 
 1. Linear Regression 
-
+![](Image/LinearRegequation.png)
 The reason to choose ``availability_365`` as an independent variable is because it is one of the top important features to predict prices. Furthermore, customers are mainly interested in the availability of the property when booking an AirBnB booking. 
 
 Linear Regression was set as a baseline model on the dataset using all of the features as model inputs. A Python package, Sklearn, was used to calculate this model; the results are as follows:
@@ -221,7 +236,9 @@ Linear Regression was set as a baseline model on the dataset using all of the fe
 - The coefficient is 129.48. By checking the R-squared, we can see that less than half of the variance in the outcome variable(price)  can be explained by the model. 
 
 
-2. Multiple Regression 
+2. Multiple Regression
+
+![](Image/multipleregressionequation.png)
 
 - ``host_total_listings_count``: number of listings owned and operated by a single host. This shows how experienced the host is when setting prices. Therefore, it will be a strong comparison when predicting prices for certain situations.
 - ``neighbourhood_cleansed_Cat``: this is where the location becomes important in predicting prices. For example, if the neighbourhood is in demand, then raise the prices and if the neighbourhood is in less demand, then lower prices. This was encoded into ordinal values.
@@ -239,10 +256,12 @@ K-Nearest Neighbours is a type of instance-based learning. For this technique, t
 
 4. Decision Tree
 
+![](Image/decisiontree,png)
 The purpose is to create a model that predicts the value of the target variable by learning simple decision rules from data features. We use the same independent variables as shown in the multiple regression. This was done using Sklearn and the Decision Classifier(random-state= 42).
 
 Limitation of Decision Tree: The technique requires advanced knowledge such as pruning or setting the maximum depth of the tree to avoid such problems with an assembled tree(VlahovIjak Alen. 2022). 
 
+![](Image/amenitiesdecisiontree.png)
 
 5. Random Forest 
 
@@ -257,7 +276,11 @@ The important error metrics for each model are used to analyse the overfitting o
 
 Among all tested models, Random Forest performs the best and produces the lowest RMSE, MSE and the highest R2  on the train-test sets in terms of price, compared to other algorithms (KNN, Decision Tree, Linear Regression and Multiple Regression). This level of accuracy is a promising outcome given the heterogeneity of the dataset, therefore the hosts, guests and investors can use this model with more means to try to reduce error by a few cents.
 
+![](Image/MSE.png)
+
 However, the Random Forest model produces the highest MSE, which means that there are outliers on the errors as demonstrated below in boxplots. For example, it shows that the Random Forest (RF) test model has the median of prediction error (MAE) of around $26 and the interquartile range is around $30. This means that 50% of the sample could be right and another 50% may be very wrong. It will be cheating to improve the regression models to drop the outliers due to  the cost of removing valuable price observations. The outliers may factor in where some of the hosts set their Airbnb at very highly skewed prices because of other unique characteristics that are not accounted for, such as minimum nights, reviews ratings. Furthermore, there is a bit of selection bias when selecting the parameters of the train and test split and evaluation. 
+
+![](Image/amenitiesrandomforest.png)
 
 
 ## Conclusion
