@@ -215,7 +215,7 @@ The Train and Test Split:
 
 The Test and Train group shapes  for ``hosting_listing_count``, ``neighbourhood_cleansed_Cat`` and ``room_type_Cat`` were (46632,3) and (19986,3), respectively.
 
-1[](Image/snapshotoftraintestsplitamenities.png)
+[](Image/snapshotoftraintestsplitamenities.png)
 
 One would perform TTS on a data set randomly(apart from time series). So, we  separated the models into 2 groups: train and test. This allows us to use one set to train the model on and split the other dataset as a testing dataset. For a large-sized dataset, a 70/30 split between train and test is usually conventional.
 
