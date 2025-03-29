@@ -252,7 +252,7 @@ K-Nearest Neighbours is a type of instance-based learning. For this technique, t
 
 4. Decision Tree
 
-![](Image/decisiontree,png)
+![](Image/decisiontree.png)
 The purpose is to create a model that predicts the value of the target variable by learning simple decision rules from data features. We use the same independent variables as shown in the multiple regression. This was done using Sklearn and the Decision Classifier(random-state= 42).
 
 Limitation of Decision Tree: The technique requires advanced knowledge such as pruning or setting the maximum depth of the tree to avoid such problems with an assembled tree(VlahovIjak Alen. 2022). 
