@@ -151,7 +151,7 @@ The ``comments`` from above for each listing were analysed using Textblob sentim
 
 This is the first 10000 comments that were analysed. We can see that there are more positive comments as demonstrated below. 
 
-![](Image/sentimentanalysisvaluecounts,png)
+![](Image/sentimentanalysisvaluecounts.png)
 
 Importance of text sentiment polarity:
 - When people are searching for a place, many choose to look at the comments and look at the average scores. For the sentiment classification, TextBlob included giving sentiment scores. Based on the polarity of the general score, a listing can go from -1 (absolute negative sentiment) to 0 (absolute natural sentiment), to 1(absolute positive sentiment). This is important for a host when deciding to write a summary about a listing to customers. Many hosts use more positive language, while others are neutral.
