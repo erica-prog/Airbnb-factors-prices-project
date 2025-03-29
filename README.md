@@ -99,10 +99,9 @@ To calculate the subjectivity and polarity of the 10000 comments in the review d
 
 For the ``amenities``, the data was cleaned by removing the NaN values and then the amenities section was changed into lists and was able to string replace the brackets and the apostrophes to create a set of all possible amenities.
 
-Then, we grouped each amenity into a certain category, if they have the same words or meaning but are in different letter cases or words. Here is a screenshot of the process:
+Then, we grouped each amenity into a certain category, if they have the same words or meaning but are in different letter cases or words.
 
-
-Then, we used the train_test split model (70:30 split) and accuracy scores to calculate the Feature Importance using Decision Tree and Random Forest classifier, which are available in the “scikit-learn” library of the python-based open source data analytics platform and the plots were created using Matplotlib.
+Afterwards, we used the train_test split model (70:30 split) and accuracy scores to calculate the Feature Importance using Decision Tree and Random Forest classifier, which are available in the “scikit-learn” library of the python-based open source data analytics platform and the plots were created using Matplotlib.
 
 Then, the NaN values were replaced by zeros in the columns. We drop the infrequent columns by creating a list of the amenity columns that have fewer  than 10% of listings. This led to our remaining amenities that were analysed below for features importance.
 
@@ -179,7 +178,7 @@ Here we have seen the most common words in the summary of the cheapest listings.
 Using the NLTK CountVectorizer(), the top 10 common words in the ``comments`` are shown. 
 ![](Image/wordcloudnameexpensivelistings.png)
 
-![](dataframeoftop10wordsincomments.png)
+![](Image/dataframeoftop10wordsincomments.png)
 
 This word cloud shows the most frequently used words in the ``comments``. We can see that "great”, location”, clean”, place”, and “recommend” are mostly featured in the comments.  The host is definitely one of the most valuable aspects, essentially for his/her availability, help and welcome. This is what guests are looking for when booking a rental. However, it is difficult to understand the actual context of each review as it could be given with a negative token,  such as “not” e.g “not great”.
 
